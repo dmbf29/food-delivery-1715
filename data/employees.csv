@@ -1,0 +1,4 @@
+id,username,password,role
+1,yuta,secret,manager
+2,kevin,secret,rider
+3,max,secret,rider
