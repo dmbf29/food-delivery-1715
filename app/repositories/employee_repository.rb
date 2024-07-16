@@ -12,6 +12,12 @@ class EmployeeRepository
     @employees
   end
 
+  def all_riders
+    @employees.select do |employee|
+      employee.rider?
+    end
+  end
+
   def find(id)
     @employees.find { |employee| employee.id == id.to_i }
   end
